@@ -1,125 +1,582 @@
 <!DOCTYPE html>
 <html>
-<title>W3.CSS Template</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-<link rel="stylesheet" href="css/main.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-.w3-sidebar {
-  z-index: 3;
-  width: 250px;
-  top: 43px;
-  bottom: 0;
-  height: inherit;
-}
-</style>
-<body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
-    <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Oren Katzir</a>
-    <a href="#About" class="w3-bar-item w3-button w3-hide-small w3-hover-white">About</a>
-    <a href="#Publications" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Publications</a>
-    <a href="#Contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Contact</a>
-  </div>
-</div>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<!-- Sidebar -->
-<!--
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#">Link</a>
-</nav>
--->
+  <title>Oren Katzir</title>
+  <meta name="description" content="">
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+  <link rel="shortcut icon" href="/assets/img/favicon.ico">
+   <link rel="stylesheet" href="/assets/css/main.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<img src="images/my_profile.jpg" alt="Oren Katzir" style="padding:80px 20px 30px 50px; float:left;width:350px;height:400px;">
-
-<div class="w3-main" style="margin-left:250px">
+   <link rel="stylesheet" href="/assets/css/other-main.css">
+  <link rel="canonical" href="/">
+</head>
 
 
-  <div id="Bio" style="padding:100px 280px 20px 40px; font-size:25px;font-family:verdana;" name="About">
-      <p>My name is Oren Katzir.</p>
-       Currently I am researcher at the Advanced Innovation Center for Future Visual Entertainment
-      (<span style="font-weight:bold">AICFVE</span>), in the Beijing Film Academy.
-    </div>
-    <div class="w3-row w3-padding-64">
-      <div class="w3-twothird w3-container">
-        <h1 class="w3-text-teal">Areas of Interest</h1>
-          <ul style="list-style-type:circle">
-            <li>Deep learning</li>
-            <li>3D reconstruction</li>
-            <li>Non-optical 3D shape acquisition methods</li>
-            <li>Texture synthesis</li>
-            <li>Sparse coding</li>
-          </ul>
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    
+
+    <nav class="site-nav">
+
+      <div class="trigger">
+        <!-- About -->
+        <a class="page-link" href="/">about</a>
+        <a class="page-link" href="#publications">publications</a>
+        <!-- <a class="page-link" href="#talks">talks</a> -->
+        <a class="page-link" href="#social">contact</a>
+
+
       </div>
+    </nav>
 
-  <div class="w3-row" name="Contact">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Contact Info</h1>
-      <ul style="list-style-type:circle">
-        <li>E-mail: okaztir@gmail.com</li>
-        <li>Phone: +972502120450 learning</li>
-    </ul>
-    </div>
   </div>
 
-  <div class="w3-row" name="Publications">
-    <div class="w3-twothird w3-container">
-      <h1 class="w3-text-teal">Publications</h1>
-      <ul style="list-style-type:circle">
-          <li> Oren Katzir  and Guy Gilboa. "A maximal interest-point strategy applied to image enhancement with external priors." Image Processing (ICIP), 2015 IEEE International Conference on. IEEE, 2015.</li>
-          <li> Oren Katzir, Tomer Michaeli and Guy Gilboa. "Generalzied spectral decompositons." To be submitted to PAMI.</li>
+</header>
 
-          <li> Kfir Aberman, Oren Katzir, Qiang Zhou, Zegang Luo, Andrei Sharf , Chen Greif, Baoquan Chen and Daniel Cohen-Or.  Dip Transform for 3D Shape Reconstruction”,  ACM Transactions on Graphics (SIGGRAPH 2017), July 2017. </li>
-    </ul>
-    </div>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title"><strong>Oren Katzir</strong></h1>
+    <h5 class="post-description"></h5>
+  </header>
+
+  <article class="post-content <strong>Oren Katzir</strong> clearfix">
+    
+  <div class="profile col one right">
+    
+      <img class="one" src="/assets/img/perfil.jpeg">
+    
+    
   </div>
 
-<!-- END MAIN -->
+
+<p>I am a PHD candidate in Tel-Aviv University under the joint supervision of Prof. <a href="https://www.cs.tau.ac.il/~dcor/index.html" target="\_blank">Daniel Cohen-Or</a> and Prof. <a href="https://www.cs.huji.ac.il/~danix/" target="\_blank">Dani Lischinski</a>. In addition, I have co-founded and serve as the CTO of OneView, developing simulation based datasets and algorithms for remote sensing application.
+My main research deals with deep neural networks and generative adversarial networks.
+My B.Sc. (cum laude) and M.Sc are in Electrical Engineering from the Technion, where I focused on image processing under the supervision of Prof. Guy Gilboa. I have an extensive code writing experience, both as a software developer and as a team leader in the IDF satellite branch. In addition, I have focused on deep learning algorithms for multiple applications as a researcher for the Beijing Film Academy (BFA), (domain adaption, 3D texture synthesis, etc.). I am motivated by hard academic problems with real application need.</p>
+
+
+  </article>
+
+
+  
+    <div class="publications" id="publications">
+  <div class="news">
+    <h3 style="font-size: 24px">Publications</h3>
+  </div>
+
+    <ol class="bibliography"><li><div class="img_row" style="height: 100%;">
+  <div class="col one ">
+      <img src="/assets/img/catdog.jpeg" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+  </div>
+    <div class="col two">
+      
+
+  <div id="katzir2020cross">
+    
+      <span class="title" style="font-weight: bold">Cross-domain cascaded deep translation</span>
+      <span class="author">
+        
+          
+            
+              
+                Oren Katzir,
+              
+            
+          
+        
+          
+            
+              
+                Dani Lischinski,
+              
+            
+          
+        
+          
+            
+              
+                <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or </a>
+              
+            
+          
+        
+      </span>
+
+      <span class="periodical">
+
+      <span class="links">
+        
+        <em style="color:#666;font-weight: bold;">
+          European Conference Computer Vision (ECCV), 2020 (Oral)
+        </em>
+      
+    
+      </span>
+
+  <span class="links">
+    
+
+  </span>
+
+      </span>
+    
+
+    <span class="links">
+    
+        <a class="btn button" href="https://www.ecva.net/papers/eccv_2020/papers_ECCV/papers/123470664.pdf" target="_blank">paper</a>
+    
+    
+    </span>
+  </div>
+
+    </div>
+</div></li>
+<li><div class="img_row" style="height: 100%;">
+  <div class="col one ">
+      <img src="/assets/img/componet.png" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+  </div>
+    <div class="col two">
+      
+
+  <div id="schor2019componet">
+    
+      <span class="title" style="font-weight: bold">Componet: Learning to generate the unseen by part synthesis and composition</span>
+      <span class="author">
+        
+          
+            
+              
+                Nadav Schor,
+              
+            
+          
+        
+          
+            
+              
+                Oren Katzir,
+              
+            
+          
+        
+          
+            
+              
+                Hao Zhang,
+              
+            
+          
+        
+          
+            
+              
+                <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or </a>
+              
+            
+          
+        
+      </span>
+
+      <span class="periodical">
+
+      <span class="links">
+        
+        <em style="color:#666;font-weight: bold;">
+          European Conference Computer Vision (ICCV), 2019
+        </em>
+      
+    
+      </span>
+
+  <span class="links">
+    
+
+  </span>
+
+      </span>
+    
+
+    <span class="links">
+    
+        <a class="btn button" href="https://openaccess.thecvf.com/content_ICCV_2019/papers/Schor_CompoNet_Learning_to_Generate_the_Unseen_by_Part_Synthesis_and_ICCV_2019_paper.pdf" target="_blank">paper</a>
+    
+    
+    </span>
+  </div>
+
+    </div>
+</div></li>
+<li><div class="img_row" style="height: 100%;">
+  <div class="col one ">
+      <img src="/assets/img/dida.png" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+  </div>
+    <div class="col two">
+      
+
+  <div id="cao2018dida">
+    
+      <span class="title" style="font-weight: bold">Dida: Disentangled synthesis for domain adaptation</span>
+      <span class="author">
+        
+          
+            
+              
+                Jinming Cao,
+              
+            
+          
+        
+          
+            
+              
+                Oren Katzir,
+              
+            
+          
+        
+          
+            
+              
+                Peng Jiang,
+              
+            
+          
+        
+          
+            
+              
+                Dani Lischinski,
+              
+            
+          
+        
+          
+            
+              
+                <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Danny Cohen-Or </a>,
+              
+            
+          
+        
+          
+            
+              
+                Changhe Tu,
+              
+            
+          
+        
+          
+            
+              
+                Yangyan Li
+              
+            
+          
+        
+      </span>
+
+      <span class="periodical">
+
+      <span class="links">
+        
+    
+      </span>
+
+  <span class="links">
+    
+
+  </span>
+
+      </span>
+    
+
+    <span class="links">
+    
+        <a class="btn button" href="https://arxiv.org/pdf/1805.08019" target="_blank">paper</a>
+    
+    
+    </span>
+  </div>
+
+    </div>
+</div></li>
+<li><div class="img_row" style="height: 100%;">
+  <div class="col one ">
+      <img src="/assets/img/dip.jpeg" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+  </div>
+    <div class="col two">
+      
+
+  <div id="aberman2017dip">
+    
+      <span class="title" style="font-weight: bold">Dip transform for 3D shape reconstruction</span>
+      <span class="author">
+        
+          
+            
+              
+                Kfir Aberman,
+              
+            
+          
+        
+          
+            
+              
+                Oren Katzir,
+              
+            
+          
+        
+          
+            
+              
+                Qiang Zhou,
+              
+            
+          
+        
+          
+            
+              
+                Zegang Luo,
+              
+            
+          
+        
+          
+            
+              
+                Andrei Sharf,
+              
+            
+          
+        
+          
+            
+              
+                Chen Greif,
+              
+            
+          
+        
+          
+            
+              
+                Baoquan Chen,
+              
+            
+          
+        
+          
+            
+              
+                <a href="https://www.cs.tau.ac.il/~dcor/" target="_blank">Daniel Cohen-Or </a>
+              
+            
+          
+        
+      </span>
+
+      <span class="periodical">
+
+      <span class="links">
+        
+        <em style="color:#666;font-weight: bold;">
+          ACM Transactions on Graphics (Proc. SIGGRAPH) 2017
+        </em>
+      
+    
+      </span>
+
+  <span class="links">
+    
+    <em>ACM New York, NY, USA</em>
+  
+
+  </span>
+
+      </span>
+    
+
+    <span class="links">
+    
+        <a class="btn button" href="https://dl.acm.org/doi/10.1145/3072959.3073693" target="_blank">paper</a>
+    
+    
+    </span>
+  </div>
+
+    </div>
+</div></li>
+<li><div class="img_row" style="height: 100%;">
+  <div class="col one ">
+      <img src="/assets/img/maximal.jpeg" class="rounded z-depth-1" style="max-width: 100%;" alt="">
+  </div>
+    <div class="col two">
+      
+
+  <div id="katzir2015maximal">
+    
+      <span class="title" style="font-weight: bold">A maximal interest-point strategy applied to image enhancement with external priors</span>
+      <span class="author">
+        
+          
+            
+              
+                Oren Katzir,
+              
+            
+          
+        
+          
+            
+              
+                Guy Gilboa
+              
+            
+          
+        
+      </span>
+
+      <span class="periodical">
+
+      <span class="links">
+        
+    
+      </span>
+
+  <span class="links">
+    
+
+  </span>
+
+      </span>
+    
+
+    <span class="links">
+    
+        <a class="btn button" href="https://ieeexplore.ieee.org/abstract/document/7351015" target="_blank">paper</a>
+    
+    
+    </span>
+  </div>
+
+    </div>
+</div></li></ol>
+
 </div>
 
+  
+
+    <!-- 
+    <div class="news" id="talks">
+  <h2>Talks</h2>
+  
+    <table>
+    
+    
+      <tr>
+        <td class="date">Aug 21, 2020</td>
+        <td class="announcement">
+          
+            PKU computer graphics group seminar.
+
+          
+        </td>
+      </tr>
+    
+    </table>
+  
+</div>
+
+   -->
+
+
+  
+    <div class="social" id="social">
+  <h2>Contact Me</h2>
+  <span class="contacticon center">
+    <a href="mailto:okaztir at gmail dot com"><i class="fa fa-envelope-square"></i></a>
+    <!-- <a href="https://scholar.google.com/citations?authorid=" target="_blank" title="Google Scholar"><i class="ai ai-google-scholar-square"></i></a> -->
+    <a href="https://github.com/orenkatzir" target="_blank" title="GitHub"><i class="fa fa-github-square"></i></a>
+    <!-- <a href="https://twitter.com/" target="_blank" title="Twitter" class="contact-icon"><i class="fa fa-twitter-square"></i></a> -->
+    <a href="https://www.linkedin.com/in/oren-katzir" target="_blank" title="GitHub"><i class="fa fa-github-square"></i></a>
+    <!-- <a href="https://twitter.com/" target="_blank" title="Twitter" class="contact-icon"><i class="fa fa-twitter-square"></i></a> -->
+  </span>
+
+  <div class="col three caption">
+    
+  </div>
+</div>
+
+  
+
+</div>
+
+      </div>
+    </div>
+
+    
+  <div class="wrapper" style="font-size: 10px">
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+  </div>
+
+
+    <!-- Load jQuery -->
+<script src="//code.jquery.com/jquery-1.12.4.min.js"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.js"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+<!-- Load Anchor JS -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/anchor-js/3.2.2/anchor.min.js"></script>
 <script>
-// Get the Sidebar
-var mySidebar = document.getElementById("mySidebar");
-
-// Get the DIV with overlay effect
-var overlayBg = document.getElementById("myOverlay");
-
-// Toggle between showing and hiding the sidebar, and add overlay effect
-function w3_open() {
-    if (mySidebar.style.display === 'block') {
-        mySidebar.style.display = 'none';
-        overlayBg.style.display = "none";
-    } else {
-        mySidebar.style.display = 'block';
-        overlayBg.style.display = "block";
-    }
-}
-
-// Close the sidebar with the close button
-function w3_close() {
-    mySidebar.style.display = "none";
-    overlayBg.style.display = "none";
-}
+  anchors.options.visible = 'always';
+  anchors.add('article h2, article h3, article h4, article h5, article h6');
 </script>
 
-</body>
+
+<!-- Include custom icon fonts -->
+<link rel="stylesheet" href="/assets/css/font-awesome.min.css">
+<link rel="stylesheet" href="/assets/css/academicons.min.css">
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-XXXXXXXX-X', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+  </body>
+
 </html>
